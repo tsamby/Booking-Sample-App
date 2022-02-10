@@ -24,20 +24,14 @@ abstract class NetworkBoundRepository<RESULT, REQUEST> {
 
     fun asFlow() = flow<Resource<RESULT>> {
 
-        Log.d("Books", "asFlow")
-
         // Emit Database content first
        emit(Resource.Success(fetchFromLocal().first()))
 
         // Fetch latest posts from remote
         val apiResponse = fetchFromRemote()
 
-        Log.d("Books2", apiResponse.toString())
-
         // Parse body
         val remoteBooks = apiResponse.body()
-
-        Log.d("Books", remoteBooks.toString())
 
         // Check for response validation
         if (apiResponse.isSuccessful && remoteBooks != null) {
@@ -57,7 +51,6 @@ abstract class NetworkBoundRepository<RESULT, REQUEST> {
         )
     }.catch { e ->
         e.printStackTrace()
-        Log.d("Books1", e.message!!)
         emit(Resource.Failed("Network error! Can't get latest books."))
     }
 

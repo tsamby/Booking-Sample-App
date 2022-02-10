@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Book Rooms App</string>
+    <string name="title_home">Home</string>
+    <string name="title_my_bookings">My Bookings</string>
+    <string name="text_no_connectivity">No Connection</string>
+    <string name="text_connectivity">Back Online</string>
+    <string name="text_room_header">Room Header</string>
+    <string name="my_booked_rooms">My booked Rooms</string>
+    <string name="confirm_dialog_message">Are you sure want to book this room?</string>
+    <string name="confirm_dialog_title">Confirm Booking</string>
+    <string name="option_yes">Yes</string>
+    <string name="option_no">No</string>
+</resources>

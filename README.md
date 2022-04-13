@@ -28,8 +28,6 @@ The application is built using the following tools
 
 Kotlin - Official programming language for Android development
 
-Gradle Kotlin DSL  - By default, uses Gradle build system with Kotlin DSL
-
 Android Architecture Components - Android Architecture Components are a part of Android Jetpack
 
 
